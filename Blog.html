@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="container mx-auto mt-6" >
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-lime-500 text-xl">WELCOME TO BLOGS</a>
+              <a href="index.html" class="btn btn-ghost text-lime-500 normal-case text-xl">HOME</a>
+            </div>
+          
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class=" text-lime-500 input input-bordered" />
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="https://placeimg.com/80/80/people" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="container mx-auto mt-6">
+        <div class="collapse rounded-2xl ">
+            <input type="checkbox" class="peer" />  
+            <div class="collapse-title bg-neutral-800 text-lime-500
+             peer-checked:bg-secondary peer-checked:text-secondary-content">
+                What is the difference between local storage and session storage?
+            </div>
+            <div class="collapse-content bg-neutral-800 text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
+              <p>The difference between localStorage and sessionStorage is that the data in localStorage stays the same which means it doesn't expire when the page loads. On the other hand the data in sessionStorage is instantly cleared when the page session ends.</p>
+            </div>
+          </div>
+          <div class="collapse mt-12 rounded-2xl">
+            <input type="checkbox" class="peer" />  
+            <div class="collapse-title bg-neutral-800 text-lime-500    peer-checked:bg-secondary peer-checked:text-secondary-content">
+                What is the difference between Global scope and block scope?
+            </div>
+            <div class="collapse-content bg-neutral-800 text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
+              <p>Global scope are those whose variables are defined outside the function and curly brackets. Global scope variables can also be accessed from different parts of any program. Block scope on the other hand is a sub-type of local scope which means its variables can be defined inside curly brackets, which can be loops and conditionals.</p>
+            </div>
+          </div>
+
+          <div class="collapse mt-12 rounded-2xl ">
+            <input type="checkbox" class="peer" />  
+            <div class="collapse-title bg-neutral-800 text-lime-500    peer-checked:bg-secondary peer-checked:text-secondary-content">
+                How does Javascript event loop work?
+            </div>
+            <div class="collapse-content bg-neutral-800 text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
+              <p>An event loop works by pulling stuff out of a queue and then placing it onto a function execution stack whenever the function stack becomes empty. It works in a cyclic manner, where it continually checks whether or not the call stack is empty. It is single-threaded not multithreaded.
+            </p>
+            </div>
+          </div>
+
+          <div class="collapse mt-12 mb-16 rounded-2xl ">
+            <input type="checkbox" class="peer" />  
+            <div class="collapse-title bg-neutral-800 text-lime-500    peer-checked:bg-secondary peer-checked:text-secondary-content">
+                What are the many ways we can get undefined
+            </div>
+            <div class="collapse-content bg-neutral-800 text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
+              <p>Undefined is a primitive value in JavaScript. A variable has an undefined value when no value is assigned before using it. For example:</p>
+              <ul>
+                <li> When a value is not assigned to a variable</li>
+                <li>When less arguments is passed in a function, it results in the parameter having a undefined value</li>
+                <li>When a variable is not declared at all</li>
+                <li>When we try to access non-existing object properties
+                </li>
+                <li>A never returning function can result in undefined</li>
+                <li>Accessing array elements outside of the index range</li>
+                <li>If return has nothing on the right side will give you undefined</li>
+                <li>Setting a value directly to undefined</li>
+              </ul>
+            </div>
+          </div>
+
+
+    </section>
+    
+</body>
+</html>
